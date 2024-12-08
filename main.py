@@ -1,16 +1,16 @@
-from dotenv import load_dotenv, find_dotenv
+#from dotenv import load_dotenv, find_dotenv
 import openai
-import os 
+#import os 
 
 #load_dotenv(find_dotenv())
 #print(os.environ['OPENAI_API_KEY'])
 #openai.api_key = os.environ['OPENAI_API_KEY']
 
-#from langchain_openai import ChatOpenAI
-#chat_model = ChatOpenAI(api_key=openai.api_key)
+from langchain_openai import ChatOpenAI
+chat_model = ChatOpenAI(api_key=openai.api_key)
 #chat_model = ChatOpenAI(api_key = openai.api_key, streaming=True)
 
-#result = chat_model.invoke("AI에 대한 시를 써줘.")
+result = chat_model.invoke("AI에 대한 시를 써줘.")
 #print(result.content)
 
 import streamlit as st
